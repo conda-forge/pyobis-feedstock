@@ -1,5 +1,5 @@
 {% set name = "pyobis" %}
-{% set version = "1.6.0" %}
+{% set version = "1.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyobis-{{ version }}.tar.gz
-  sha256: bfcc925fff9521b4484a40b6c18c75b539c0ae1553c2d11523e46b5a599be886
+  sha256: b050798f80d254fa4b762974634e33e0652c7af352af9accc962692bcfd62b11
 
 build:
   noarch: python
