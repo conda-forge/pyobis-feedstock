@@ -1,13 +1,13 @@
 {% set name = "pyobis" %}
-{% set version = "1.6.1" %}
+{% set version = "1.6.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyobis-{{ version }}.tar.gz
-  sha256: b050798f80d254fa4b762974634e33e0652c7af352af9accc962692bcfd62b11
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pyobis-{{ version }}.tar.gz
+  sha256: 14366896c5c96360124334121cb9e916b7364cc0a4839338cdffc0ae071aec83
 
 build:
   noarch: python
@@ -22,9 +22,10 @@ requirements:
     - wheel
     - pip
   run:
+    - urllib3 <2.0.0
     - requests-cache >=1.2.0,<2.0.0
     - python >={{ python_min }}
-    - requests >2.7
+    - requests >=2.7
     - pandas
 
 test:
