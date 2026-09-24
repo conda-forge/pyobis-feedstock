@@ -3,11 +3,13 @@ About pyobis-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyobis-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/iobis/pyobis
+Home: https://pypi.org/project/pyobis/
 
 Package license: MIT
 
 Summary: Python client for OBIS
+
+Documentation: https://iobis.github.io/pyobis
 
 Current build status
 ====================
